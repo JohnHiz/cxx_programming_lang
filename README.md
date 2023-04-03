@@ -46,7 +46,7 @@ of the different types.
 ## Building
 
 ```bash
-NUMBER_OF_CPUS=$((`nproc` - 2))                                            # Linux
+NUMBER_OF_CPUS=$((`nproc` - 2))                                          # Linux
 NUMBER_OF_CPUS=$(expr $(sysctl -n hw.ncpu) - 2)                          # MacOS
 
 cmake --build ${BUILD_DIR} --config ${CMAKE_CONFIG} --parallel ${NUMBER_OF_CPUS}
